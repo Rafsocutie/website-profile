@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  outline: none;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: url(bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-rendering:optimizeSpeed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+#videoPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    backdrop-filter: blur(1px);
+}
+
+.background h4 {
+    color:#fff;
+    font-size: 20px;
+    letter-spacing: 3px;
+    display: inline-block;
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typeWriter 3s steps(40) forwards infinite alternate-reverse;
+}
+
+.main-cardprof {
+    width: 500px;
+    height: 250px;
+    background:url(7eb7f04e52f83fb743d83dfb38981fe7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(255, 255, 255, 0.76);
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.card-profile {
+    width: 150px;
+    height: 150px;
+    background: url(icon-website.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 70px;
+    padding: 10px 10px;
+}
+
+.social-icons {
+    width: 100px;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons h3 {
+    margin-right: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.social-icons .roblox {
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(83, 83, 187);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.social-icons .discord {
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(83, 83, 187);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 10px;
+}
+
+.social-icons .tiktok {
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    background: rgb(83, 83, 187);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 10px;
+}
+.roblox:hover {
+    background: red;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 16px 0 aqua;
+}
+
+.discord:hover {
+    background: red;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 16px 0 aqua;
+}
+
+.tiktok:hover {
+    background: red;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 16px 0 aqua;
+}
+
+
+/* music container */
+.music-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(1px);
+}
+
+.controls {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    height: auto;
+    background: url(girl-sword.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.prev {
+    height: 30px;
+    border: 2px solid black;
+    background:red;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.play {
+    height: 30px;
+    border: 2px solid black;
+    background:red;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.pause {
+    height: 30px;
+    border: 2px solid black;
+    background:red;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.next {
+    height: 30px;
+    border: 2px solid black;
+    background:red;
+    border-radius: 7px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.prev:hover {
+    background: white;
+    box-shadow: 0 0 16px 0 aqua;
+    transition: 0.5s ease-in-out;
+}
+
+.play:hover {
+    background: white;
+    box-shadow: 0 0 16px 0 aqua;
+    transition: 0.5s ease-in-out;
+}
+
+.pause:hover {
+    background: white;
+    box-shadow: 0 0 16px 0 aqua;
+    transition: 0.5s ease-in-out;
+}
+
+.next:hover {
+    background: white;
+    box-shadow: 0 0 16px 0 aqua;
+    transition: 0.5s ease-in-out;
+}
+
+.range-container {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.range-container .range {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+}
+
+input[type = "range"] {
+    -webkit-appearance: none;
+    background: url(icon-website.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type = "range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    background: red;
+    height: 15px;
+    width: 15px;
+}
+
+.range-container .picture {
+    width: 200px;
+    height: 100px;
+    right: 0;
+    padding: 5px;
+}
+
+.picture img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.picture p {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .main-cardprof {
+        height: 250px;
+        width: 300px;
+    }
+    .card-profile {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 100px;
+    }
+
+    .social-icons .roblox {
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .social-icons .discord {
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .social-icons .tiktok {
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    .social-icons h3 {
+        margin-right: 5px;
+    }
+
+    .music-container .range {
+        width: 50%;
+    }
+
+    .range-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

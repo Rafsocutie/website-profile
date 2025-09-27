@@ -1,0 +1,9 @@
+/* typewriter animation */
+@keyframes typeWriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 200px;
+    }
+}
